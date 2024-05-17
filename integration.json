@@ -5,7 +5,7 @@
   ],
   "ubi-nodejs-extension": "github.com/paketo-community/ubi-nodejs-extension",
   "build-plan": "github.com/paketo-community/build-plan",
-  "nginx": "github.com/initializ-buildpacks/nginx",
+  "nginx": "github.com/paketo-buildpacks/nginx",
   "node-engine": "github.com/paketo-buildpacks/node-engine",
   "node-run-script": "github.com/paketo-buildpacks/node-run-script"
 }
