@@ -3,7 +3,7 @@ package fakes
 import (
 	"sync"
 
-	npminstall "github.com/paketo-buildpacks/npm-install"
+	npminstall "github.com/initializ-buildpacks/npm-install"
 )
 
 type BuildManager struct {

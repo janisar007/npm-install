@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	npminstall "github.com/paketo-buildpacks/npm-install"
+	npminstall "github.com/initializ-buildpacks/npm-install"
 	"github.com/paketo-buildpacks/packit/v2"
 	"github.com/paketo-buildpacks/packit/v2/fs"
 	"github.com/paketo-buildpacks/packit/v2/scribe"

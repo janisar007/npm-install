@@ -7,8 +7,8 @@ import (
 	"os"
 	"testing"
 
-	npminstall "github.com/paketo-buildpacks/npm-install"
-	"github.com/paketo-buildpacks/npm-install/fakes"
+	npminstall "github.com/initializ-buildpacks/npm-install"
+	"github.com/initializ-buildpacks/npm-install/fakes"
 	"github.com/paketo-buildpacks/packit/v2/pexec"
 	"github.com/paketo-buildpacks/packit/v2/scribe"
 	"github.com/sclevine/spec"

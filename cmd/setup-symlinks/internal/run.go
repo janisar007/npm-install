@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	npminstall "github.com/paketo-buildpacks/npm-install"
+	npminstall "github.com/initializ-buildpacks/npm-install"
 )
 
 func Run(executablePath, appDir string, symlinkResolver npminstall.SymlinkResolver) error {

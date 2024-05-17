@@ -1,4 +1,4 @@
-module github.com/paketo-buildpacks/npm-install
+module github.com/initializ-buildpacks/npm-install
 
 go 1.18
 

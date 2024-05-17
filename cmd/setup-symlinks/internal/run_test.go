@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	npminstall "github.com/paketo-buildpacks/npm-install"
-	"github.com/paketo-buildpacks/npm-install/cmd/setup-symlinks/internal"
+	npminstall "github.com/initializ-buildpacks/npm-install"
+	"github.com/initializ-buildpacks/npm-install/cmd/setup-symlinks/internal"
 	"github.com/sclevine/spec"
 	"github.com/sclevine/spec/report"
 

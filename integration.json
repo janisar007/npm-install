@@ -1,7 +1,7 @@
 {
   "builders": [
     "paketocommunity/builder-ubi-buildpackless-base:latest",
-    "paketobuildpacks/builder-jammy-buildpackless-full"
+    "initializbuildpacks/securepacks-initzbuilder"
   ],
   "ubi-nodejs-extension": "github.com/paketo-community/ubi-nodejs-extension",
   "build-plan": "github.com/paketo-community/build-plan",

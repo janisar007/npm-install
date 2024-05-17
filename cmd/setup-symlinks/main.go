@@ -4,8 +4,8 @@ import (
 	"log"
 	"os"
 
-	npminstall "github.com/paketo-buildpacks/npm-install"
-	"github.com/paketo-buildpacks/npm-install/cmd/setup-symlinks/internal"
+	npminstall "github.com/initializ-buildpacks/npm-install"
+	"github.com/initializ-buildpacks/npm-install/cmd/setup-symlinks/internal"
 )
 
 func main() {

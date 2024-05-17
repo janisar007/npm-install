@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	npminstall "github.com/paketo-buildpacks/npm-install"
+	npminstall "github.com/initializ-buildpacks/npm-install"
 	"github.com/sclevine/spec"
 
 	. "github.com/onsi/gomega"
