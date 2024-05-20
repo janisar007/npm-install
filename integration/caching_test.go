@@ -120,7 +120,7 @@ func testCaching(t *testing.T, context spec.G, it spec.S) {
 
 			Eventually(container).Should(BeAvailable())
 
-			// Expect(secondImage.ID).To(Equal(firstImage.ID))
+			Expect(secondImage.ID).To(Equal(firstImage.ID))
 			Expect(secondImage.Buildpacks[1].Layers["launch-modules"].SHA).To(Equal(firstImage.Buildpacks[1].Layers["launch-modules"].SHA))
 
 			Expect(logs).To(ContainLines(
@@ -208,7 +208,7 @@ func testCaching(t *testing.T, context spec.G, it spec.S) {
 
 			Eventually(container).Should(BeAvailable())
 
-			// Expect(secondImage.ID).To(Equal(firstImage.ID))
+			Expect(secondImage.ID).To(Equal(firstImage.ID))
 			Expect(secondImage.Buildpacks[1].Layers["launch-modules"].SHA).To(Equal(firstImage.Buildpacks[1].Layers["launch-modules"].SHA))
 		})
 
@@ -350,7 +350,7 @@ func testCaching(t *testing.T, context spec.G, it spec.S) {
 
 			Eventually(container).Should(BeAvailable())
 
-			// Expect(secondImage.ID).To(Equal(firstImage.ID))
+			Expect(secondImage.ID).To(Equal(firstImage.ID))
 			Expect(secondImage.Buildpacks[1].Layers["launch-modules"].SHA).To(Equal(firstImage.Buildpacks[1].Layers["launch-modules"].SHA))
 
 			Expect(logs).To(ContainLines(
@@ -433,7 +433,7 @@ func testCaching(t *testing.T, context spec.G, it spec.S) {
 			containerIDs[container.ID] = struct{}{}
 
 			Eventually(container).Should(BeAvailable())
-			// Expect(secondImage.ID).To(Equal(firstImage.ID))
+			Expect(secondImage.ID).To(Equal(firstImage.ID))
 
 			Expect(logs).To(ContainLines(
 				fmt.Sprintf("%s%s 1.2.3", extenderBuildStr, settings.Buildpack.Name),
@@ -502,7 +502,7 @@ func testCaching(t *testing.T, context spec.G, it spec.S) {
 			containerIDs[container.ID] = struct{}{}
 
 			Eventually(container).Should(BeAvailable())
-			// Expect(secondImage.ID).To(Equal(firstImage.ID))
+			Expect(secondImage.ID).To(Equal(firstImage.ID))
 		})
 	})
 }

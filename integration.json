@@ -1,6 +1,6 @@
 {
   "builders": [
-    "initializbuildpacks/securepacks-initzbuilder"
+    "index.docker.io/initializbuildpacks/securepacks-initzbuilder"
   ],
   "ubi-nodejs-extension": "github.com/paketo-community/ubi-nodejs-extension",
   "build-plan": "github.com/paketo-community/build-plan",
