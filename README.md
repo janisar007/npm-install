@@ -1,7 +1,8 @@
-# Paketo Buildpack for NPM Install
+# Initializ Buildpack for NPM Install
 
+## (https://hub.docker.com/r/initializbuildpacks/npm-install)
 The NPM Install CNB makes use of the [`npm`](https://www.npmjs.com/) tooling
-installed within the [Node Engine CNB](https://github.com/paketo-buildpacks/node-engine)
+installed within the [Node Engine CNB](https://github.com/initializ-buildpacks/node-engine)
 to manage application dependencies.
 
 ## Integration
@@ -70,13 +71,3 @@ To run all integration tests, run:
 ```
 /scripts/integration.sh
 ```
-
-## Stack support
-
-For most apps, the NPM Install Buildpack runs fine on the [Base
-builder](https://github.com/paketo-buildpacks/stacks#metadata-for-paketo-buildrun-stack-images).
-But when the app requires compilation of native extensions using `node-gyp`,
-the buildpack requires that you use the [Full
-builder](https://github.com/paketo-buildpacks/stacks#metadata-for-paketo-buildrun-stack-images).
-This is because `node-gyp` requires `python` that's absent on the Base builder,
-and the module may require other shared objects.
