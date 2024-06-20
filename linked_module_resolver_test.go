@@ -131,16 +131,6 @@ func testLinkedModuleResolver(t *testing.T, context spec.G, it spec.S) {
 
 			context("when the destination cannot be scaffolded", func() {
 				it.Before(func() {
-					err := os.WriteFile(filepath.Join(workspace, "package-lock.json"), []byte(`{
-						"packages": {
-							"module": {
-								"resolved": "src/packages/module",
-								"link": true
-							}
-						}
-					}`), 0600)
-					Expect(err).NotTo(HaveOccurred())
-
 					Expect(os.Mkdir(filepath.Join(layerPath, "sub-dir"), 0400)).To(Succeed())
 				})
 
@@ -219,16 +209,6 @@ func testLinkedModuleResolver(t *testing.T, context spec.G, it spec.S) {
 
 			context("when the destination cannot be scaffolded", func() {
 				it.Before(func() {
-					err := os.WriteFile(filepath.Join(workspace, "package-lock.json"), []byte(`{
-						"packages": {
-							"module": {
-								"resolved": "src/packages/module",
-								"link": true
-							}
-						}
-					}`), 0600)
-					Expect(err).NotTo(HaveOccurred())
-
 					Expect(os.Mkdir(filepath.Join(otherLayerPath, "sub-dir"), 0400)).To(Succeed())
 				})
 
