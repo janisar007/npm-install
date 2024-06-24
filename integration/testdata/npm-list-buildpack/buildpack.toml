@@ -1,9 +1,0 @@
-api = "0.7"
-
-[buildpack]
-  id = "initializ-buildpacks/npm-install/npm-list"
-  name = "Paketo NPM List Buildpack"
-  version = "0.0.1"
-
-[[stacks]]
-  id = "*"
