@@ -1,7 +1,7 @@
 # Initializ Buildpack for NPM Install
 
 ## (https://hub.docker.com/r/initializbuildpacks/npm-install)
-The NPM Install CNB makes use of the [`npm`](https://www.npmjs.com/) tooling
+NPM Install CNB makes use of the [`npm`](https://www.npmjs.com/) tooling
 installed within the [Node Engine CNB](https://github.com/initializ-buildpacks/node-engine)
 to manage application dependencies.
 
